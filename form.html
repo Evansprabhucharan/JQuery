@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/animation.js" type="text/javascript"></script>
+	<script src="js/validation.js" type="text/javascript"></script>
+</head>
+<body>
+	<p>* indicates required fields. </p>
+	<form name="myform" onsubmit="return validateForm()">
+<ul>
+	<li class="title">Who you are??</li>
+	<li class="fields">
+		<lable>*First Name</lable><br />
+		<input id="first_name" class="req" type="text" /><br />
+		<lable>Middle Name</lable><br />
+		<input id="middle_name"  type="text" /><br />
+		<lable>*Last Name</lable><br />
+		<input id="last_name" class="req" type="text" /><br />
+		<lable>*Email</lable><br />
+		<input id="email" class="req" type="text" /><br />
+	</li>
+	<li class="title">Where you are from??</li>
+	<li class="fields">
+		<lable>Street</lable><br />
+		<input id="street"  type="text" /><br />
+		<lable>*City</lable><br />
+		<input id="City"  class="req" type="text" /><br />
+		<lable>*Zip</lable><br />
+		<input id="Zip" class="req" type="text" /><br />
+	</li>
+	<li class="title">What you do??</li>
+	<li class="fields">
+		<lable>*Occupation</lable><br />
+		<input id="occupation" class="req"  type="text" /><br />
+		<lable>Organization's Name</lable><br />
+		<input id="organization"  type="text" /><br />
+	</li>
+</ul>
+<input type="submit" value="Submit Form" />
+</form>
+</body>
+</html>
